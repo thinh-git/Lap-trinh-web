@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Hub - Các Trang Cá Nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .portfolios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .portfolio-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .portfolio-image {
+            height: 200px;
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+
+        .portfolio-content {
+            padding: 25px;
+        }
+
+        .portfolio-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .portfolio-description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.2s ease;
+        }
+
+        .portfolio-link:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .portfolios {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio Hub</h1>
+            <p>Bộ sưu tập các trang portfolio cá nhân của sinh viên CNTT</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="portfolios">
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <span>🎨</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">MinhHy's Portfolio</h3>
+                    <p class="portfolio-description">Portfolio của Nguyễn Dương Minh Hy - Lập trình viên Game Developer tương lai</p>
+                    <a href="nguyenduongmnihhy/index.html" class="portfolio-link">Xem Portfolio</a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <span>💼</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Nguyễn Công Thành - CV</h3>
+                    <p class="portfolio-description">CV cá nhân của Nguyễn Công Thành - Lập trình viên Web Front-end</p>
+                    <a href="portfo/index.html" class="portfolio-link">Xem CV</a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <span>🚀</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Trần Gia Thịnh - Portfolio</h3>
+                    <p class="portfolio-description">Portfolio của Trần Gia Thịnh - Full-stack Developer với mục tiêu phát triển chuyên nghiệp</p>
+                    <a href="Portfolio/index.html" class="portfolio-link">Xem Portfolio</a>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-image">
+                    <span>🎯</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Phạm Hải Anh - Profile</h3>
+                    <p class="portfolio-description">Profile của Phạm Hải Anh - Chuyên viên phát triển web và lập trình viên C/C++</p>
+                    <a href="ProjectProfile/index.html" class="portfolio-link">Xem Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Portfolio Hub - Đại Học Giao Thông Vận Tải TP.HCM</p>
+        </div>
+    </footer>
+</body>
+</html>
